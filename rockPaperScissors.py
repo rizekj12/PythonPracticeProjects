@@ -1,4 +1,4 @@
-# first attempt
+
 
 rock = '''
     _______
@@ -29,6 +29,8 @@ scissors = '''
 
 #Write your code below this line 👇
 import random 
+
+#first attempt
 
 randomNum = random.randint(1,3)
 
@@ -73,3 +75,7 @@ elif yourChoice == 'scissors' and computerChoice == scissors:
   print('tie')
 else:
   print('invalid entry, please type rock, paper, or scissors')
+
+  #second attempt refactored with a list 
+
+  
