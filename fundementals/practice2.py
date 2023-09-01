@@ -34,14 +34,31 @@
 # print(f"{row1}\n{row2}\n{row3}")
 
 
-list = [1,2,3]
-newList = []
+# list = [1,2,3]
+# newList = []
 
-for number in list:
-    newList.append(number + 1)
+# for number in list:
+#     newList.append(number + 1)
 
-print(newList)
+# print(newList)
     
+# 🚨 Don't change the code below 👇
+student_heights = input("Input a list of student heights ").split()
+for n in range(0, len(student_heights)):
+  student_heights[n] = int(student_heights[n])
+# 🚨 Don't change the code above 👆
 
+
+#Write your code below this row 👇
+
+numOfStudents = 0
+heightsSum = 0
+for item in student_heights:
+    numOfStudents += 1
+    heightsSum += item
+
+avg = round(heightsSum / numOfStudents)
+
+print(avg)
 
 
