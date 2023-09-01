@@ -1,20 +1,20 @@
 # 🚨 Don't change the code below 👇
-row1 = ["⬜️","️⬜️","️⬜️"]
-row2 = ["⬜️","⬜️","️⬜️"]
-row3 = ["⬜️️","⬜️️","⬜️️"]
-map = [row1, row2, row3]
-print(f"{row1}\n{row2}\n{row3}")
-position = input("Where do you want to put the treasure? ")
+# row1 = ["⬜️","️⬜️","️⬜️"]
+# row2 = ["⬜️","⬜️","️⬜️"]
+# row3 = ["⬜️️","⬜️️","⬜️️"]
+# map = [row1, row2, row3]
+# print(f"{row1}\n{row2}\n{row3}")
+# position = input("Where do you want to put the treasure? ")
 # 🚨 Don't change the code above 👆
 
 #Write your code below this row 👇
 
-horizontalPosition = int(position[0]) - 1 
-verticalPosition = int(position[1]) - 1
+# horizontalPosition = int(position[0]) - 1 
+# verticalPosition = int(position[1]) - 1
 
 
-selected_row = map[verticalPosition]
-selected_row[horizontalPosition] = "X"
+# selected_row = map[verticalPosition]
+# selected_row[horizontalPosition] = "X"
 
 # chosenRow = f"row{position[0]}"
 # chosenColumn = int(position[1]) - 1
@@ -31,4 +31,17 @@ selected_row[horizontalPosition] = "X"
 #Write your code above this row 👆
 
 # 🚨 Don't change the code below 👇
-print(f"{row1}\n{row2}\n{row3}")
+# print(f"{row1}\n{row2}\n{row3}")
+
+
+list = [1,2,3]
+newList = []
+
+for number in list:
+    newList.append(number + 1)
+
+print(newList)
+    
+
+
+
