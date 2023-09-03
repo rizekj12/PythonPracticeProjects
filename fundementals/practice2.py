@@ -43,22 +43,37 @@
 # print(newList)
     
 # 🚨 Don't change the code below 👇
-student_heights = input("Input a list of student heights ").split()
-for n in range(0, len(student_heights)):
-  student_heights[n] = int(student_heights[n])
-# 🚨 Don't change the code above 👆
+# student_heights = input("Input a list of student heights ").split()
+# for n in range(0, len(student_heights)):
+#   student_heights[n] = int(student_heights[n])
+# # 🚨 Don't change the code above 👆
 
+
+# #Write your code below this row 👇
+
+# numOfStudents = 0
+# heightsSum = 0
+# for item in student_heights:
+#     numOfStudents += 1
+#     heightsSum += item
+
+# avg = round(heightsSum / numOfStudents)
+
+# print(avg)
+
+# 🚨 Don't change the code below 👇
+student_scores = input("Input a list of student scores ").split()
+for n in range(0, len(student_scores)):
+  student_scores[n] = int(student_scores[n])
+print(student_scores)
+# 🚨 Don't change the code above 👆
 
 #Write your code below this row 👇
 
-numOfStudents = 0
-heightsSum = 0
-for item in student_heights:
-    numOfStudents += 1
-    heightsSum += item
+highestScore = student_scores[0]
 
-avg = round(heightsSum / numOfStudents)
+for n in student_scores:
+    if n > highestScore:
+        highestScore = n
 
-print(avg)
-
-
+print(f'The highest score in the class is: {highestScore}')
